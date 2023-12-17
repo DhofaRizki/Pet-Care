@@ -8,4 +8,19 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function dashboard ()
+    {
+        return view('dashboard/adminhome', [
+            'admin' => session()->get('admin')]
+        );
+    }
+
+    public function dashboard_pengguna () 
+    {
+        return view('dashboard/penggunahome',[
+            'pengguna' => session()->get('pengguna')
+    ]);
+            
+    }
 }
