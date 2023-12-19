@@ -38,15 +38,19 @@
 
 <body>
 
+  
   <main id="main">
 
     <!-- ======= Portfolio Details Section ======= -->
+    
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-      <?php foreach($data_barang as $baris):?>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="card">
+                <div class="card text-white bg-secondary mb-3">
         <div class="row gy-4">
-
+        <?php foreach($data_barang as $baris):?>
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
@@ -60,16 +64,17 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-5">
             <div class="portfolio-info">
               <h3><?=$baris['namabarang']?></h3>
               <ul>
-                <li><strong><?=$baris['jenis']?></strong></li>
-                <li><strong><?=$baris['harga']?></strong></li>
-                <li><strong><?=$baris['lokasi']?></strong></li>
+                <li><strong>Jenis :</strong> <?=$baris['jenis']?></li>
+                <li><strong>Harga :</strong> <?=$baris['harga']?></li>
+                <li><strong>Lokasi :</strong> <?=$baris['lokasi']?></li>
               </ul>
             </div>
             <div class="portfolio-description">
+              <h4>Detail</h4>
               <p>
               <?=$baris['detail']?>
               </p>
@@ -80,8 +85,9 @@
         <?php endforeach;?>
       </div>
     </section><!-- End Portfolio Details Section -->
-
+    
   </main><!-- End #main -->
+ 
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

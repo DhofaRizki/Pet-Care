@@ -45,7 +45,7 @@
     <div class="card">
       <div class="card-header">
         <a href="<?=base_url('/grooming/form')?>">Tambah data</a>
-        <h3 align="center" class="card-title">Fixed Header Table</h3>
+        <h3 align="center" class="card-title">Table Grooming</h3>
 
         <div align="right" class="card-tools">
           <div class="input-group input-group-sm" style="width: 150px;">

@@ -19,6 +19,7 @@ class GroomingController extends BaseController
           'jenishewan' => request()->getPost('jenishewan'),
           'jenispaket' => request()->getPost('jenispaket'),
           'harga' => request()->getPost('harga'),
+          'lokasi' => request()->getPost('lokasi')
           
         ];
  
@@ -30,7 +31,7 @@ class GroomingController extends BaseController
         }      $id=$r;
         if($r != false){
             $this->terimaFile($id);
-          return redirect()->to(base_url('grooming'));
+            return redirect()->to(base_url('grooming'));
         }
      }
  
@@ -61,18 +62,18 @@ class GroomingController extends BaseController
          ]);
         }
 
-        private function terimaFile($id){
-            $f = request()->getFile('foto');
-            if($f->isFile()){
-                $target = WRITEPATH . '/uploads/';
-                $f->move($target, $id . '.png');
-            }
+    private function terimaFile($id){
+        $f = request()->getFile('foto');
+        if($f && $f->isFile()){
+            $target = WRITEPATH . '/uploads/';
+            $f->move($target, $id . '.png');
         }
+    }
     
-        public function foto($id){
-            $f = file_get_contents(WRITEPATH . '/uploads/' . $id . '.png');
-            return response()
+    public function foto($id){
+         $f = file_get_contents(WRITEPATH . '/uploads/' . $id . '.png');
+        return response()
                     ->setHeader('Content-type', 'image/png')
                     ->setBody( $f );
-        }
+    }
 }

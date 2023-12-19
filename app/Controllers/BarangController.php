@@ -20,7 +20,7 @@ class BarangController extends BaseController
           'jenis' => request()->getPost('jenis'),
           'harga' => request()->getPost('harga'),
           'lokasi' => request()->getPost('lokasi'),
-          
+          'detail' => request()->getPost('detail'),
         ];
  
         $id = (int) request()->getPost('id');

@@ -68,8 +68,8 @@
               <th>Jenis</th>
               <th>Harga</th>
               <th>Lokasi</th>
-              <th>Foto</th>
               <th>Detail</th>
+              <th>Foto</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -80,10 +80,10 @@
                       <td><?=$baris['jenis']?></td>
                       <td><?=$baris['harga']?></td>
                       <td><?=$baris['lokasi']?></td>
+                      <td><?=$baris['detail']?></td>
                       <td>
                           <img src="<?=base_url('barang/foto/'.$baris['id'].'.png')?>" style="width:100px" />
                       </td>
-                      
                       <td><a href="<?=base_url('barang/edit/') . $baris['id'] ?>">edit</a></td>
                       <td>
                           <form onsubmit="return confirm('Are u sure want to delete this data?')" method="post" action="<?=base_url('barang/delete')?>">

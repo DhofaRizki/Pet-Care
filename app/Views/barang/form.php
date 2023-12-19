@@ -82,16 +82,16 @@
         </div>
 
         <div class="form-group row">
-            <label for="foto" class="col-sm-3 col-form-label">Foto</label>
+            <label for="detail" class="col-sm-3 col-form-label">Detail</label>
             <div class="col-sm-6">
-                <input type="file" name="foto" >
+                <textarea name="detail" value="<?=$data['detail']?? ''?>"></textarea>
             </div>
         </div>
 
         <div class="form-group row">
-            <label for="detail" class="col-sm-3 col-form-label">Detail</label>
+            <label for="foto" class="col-sm-3 col-form-label">Foto</label>
             <div class="col-sm-6">
-                <textarea name="detail" value="<?=$data['detail']?? ''?>"></textarea>
+                <input type="file" name="foto" >
             </div>
         </div>
         

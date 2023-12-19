@@ -27,7 +27,6 @@ $routes->get('/barang/edit/(:num)', 'BarangController::edit/$1');
 $routes->post('/barang/Save', 'BarangController::create');
 $routes->post('/barang/delete', 'BarangController::delete');
 $routes->get('/barang/foto/(:num).png', 'BarangController::foto/$1');
-$routes->get('/portofolio', 'BarangController::show');
 
 $routes->get('/grooming', 'GroomingController::show');
 $routes->get('/grooming/form', 'GroomingController::form');
@@ -48,7 +47,6 @@ $routes->get('/pbarang/form', 'PbarangController::form');
 $routes->get('/pbarang/edit/(:num)', 'PbarangController::edit/$1');
 $routes->post('/pbarang/Save', 'PbarangController::create');
 $routes->post('/pbarang/delete', 'PbarangController::delete');
-
 
 $routes->get('/pgrooming', 'PgroomingController::show');
 $routes->get('/pgrooming/form', 'PgroomingController::form');
@@ -74,3 +72,7 @@ $routes->get('/pgnbarang/tampildata', 'PgnbarangController::show');
 $routes->get('/pgndokter/tampildata', 'PgndokterController::show');
 
 $routes->get('/pgngrooming/tampildata', 'PgngroomingController::show');
+
+$routes->get('/portofolio/barang', 'PortofolioController::show');
+$routes->get('/portofolio/dokter', 'PortofolioController::shows');
+$routes->get('/portofolio/grooming', 'PortofolioController::showss');
