@@ -43,7 +43,7 @@ class LoginController extends BaseController
                 return "Login gagal";
             }else{
                 session()->set('pengguna', $r);
-                return redirect()->to(base_url('/dashboard/anggotaperpus'));  
+                return redirect()->to(base_url('/dashboard/penggunahome'));  
             }
         }else{
             return redirect()->to(base_url('login'));
@@ -57,9 +57,9 @@ class LoginController extends BaseController
         return redirect()->to(base_url('login'));
     }
 
-    public function sign_up()
+    public function signup()
     {
-        
+        return view('signup/form');
     }
 
     public function lupa_password()

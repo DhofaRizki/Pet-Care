@@ -27,9 +27,10 @@ class DokterController extends BaseController
             $r = $model->update($id, $data);
          }else{
              $r = $model->insert($data);
-        }
+        }      $id=$r;
         if($r != false){
-          return redirect()->to(base_url('dokter'));
+            $this->terimaFile($id);
+            return redirect()->to(base_url('dokter'));
         }
      }
  
@@ -58,5 +59,20 @@ class DokterController extends BaseController
          return view('dokter/form', [
              'data' => $data
          ]);
+        }
+
+        private function terimaFile($id){
+            $f = request()->getFile('foto');
+            if($f->isFile()){
+                $target = WRITEPATH . '/uploads/';
+                $f->move($target, $id . '.png');
+            }
+        }
+    
+        public function foto($id){
+            $f = file_get_contents(WRITEPATH . '/uploads/' . $id . '.png');
+            return response()
+                    ->setHeader('Content-type', 'image/png')
+                    ->setBody( $f );
         }
 }

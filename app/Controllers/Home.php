@@ -23,4 +23,9 @@ class Home extends BaseController
     ]);
             
     }
+    
+    public function maintenance ()
+    {
+        return view('dashboard/maintenance');
+    }
 }

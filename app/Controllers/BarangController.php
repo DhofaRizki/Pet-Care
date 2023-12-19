@@ -16,10 +16,11 @@ class BarangController extends BaseController
     {
         $model = new BarangModel();
         $data = [
-          'nambarang' => request()->getPost('nambarang'),
+          'namabarang' => request()->getPost('namabarang'),
           'jenis' => request()->getPost('jenis'),
           'harga' => request()->getPost('harga'),
           'lokasi' => request()->getPost('lokasi'),
+          
         ];
  
         $id = (int) request()->getPost('id');
@@ -27,9 +28,11 @@ class BarangController extends BaseController
             $r = $model->update($id, $data);
          }else{
              $r = $model->insert($data);
+             $id=$r;
         }
         if($r != false){
-          return redirect()->to(base_url('barang'));
+            $this->terimaFile($id);
+            return redirect()->to(base_url('barang'));
         }
      }
  
@@ -58,5 +61,20 @@ class BarangController extends BaseController
          return view('barang/form', [
              'data' => $data
          ]);
+    }
+
+    private function terimaFile($id){
+        $f = request()->getFile('foto');
+        if($f->isFile()){
+            $target = WRITEPATH . '/uploads/';
+            $f->move($target, $id . '.png');
         }
+    }
+
+    public function foto($id){
+        $f = file_get_contents(WRITEPATH . '/uploads/' . $id . '.png');
+        return response()
+                ->setHeader('Content-type', 'image/png')
+                ->setBody( $f );
+    }
 }

@@ -1,0 +1,562 @@
+INFO - 2023-12-18 01:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 01:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 01:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 01:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 01:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 01:49:17 --> Undefined variable $data_barang
+in APPPATH\Views\pgnbarang\tampildata.php on line 42.
+ 1 APPPATH\Views\pgnbarang\tampildata.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_barang', 'D:\\Final Project WP2\\pet_care\\app\\Views\\pgnbarang\\tampildata.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Final Project WP2\\pet_care\\app\\Views\\pgnbarang\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pgnbarang/tampildata', [], true)
+ 5 APPPATH\Controllers\PgnbarangController.php(19): view('pgnbarang/tampildata')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+ERROR - 2023-12-18 01:58:06 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 01:58:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+ERROR - 2023-12-18 02:03:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 02:03:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+ERROR - 2023-12-18 02:03:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 02:03:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+ERROR - 2023-12-18 02:03:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 02:03:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+ERROR - 2023-12-18 02:03:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 02:03:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 02:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 02:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 02:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 02:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 02:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 02:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 02:38:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 02:38:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 02:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 02:44:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pet_care', 3306, '', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Final Project WP2\pet_care\app\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+#7 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#11 {main}
+CRITICAL - 2023-12-18 02:44:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PgnbarangController.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 03:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 03:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 04:23:27 --> mysqli_sql_exception: Unknown column 'nambarang' in 'field list' in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Final Project WP2\pet_care\app\Controllers\BarangController.php(29): CodeIgniter\Model->insert(Array)
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\BarangController->create()
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#13 {main}
+CRITICAL - 2023-12-18 04:23:27 --> Unknown column 'nambarang' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_barang` (`nambarang`, `jenis`, `harga`, `lokasi`) VALUES (:nambarang:, :jenis:, :harga:, :lokasi:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BarangController.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+ERROR - 2023-12-18 04:24:21 --> mysqli_sql_exception: Unknown column 'nambarang' in 'field list' in D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Final Project WP2\pet_care\app\Controllers\BarangController.php(29): CodeIgniter\Model->insert(Array)
+#8 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\BarangController->create()
+#9 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#10 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Final Project WP2\pet_care\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Final Project WP2\pet_care\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Final Projec...')
+#13 {main}
+CRITICAL - 2023-12-18 04:24:21 --> Unknown column 'nambarang' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_barang` (`nambarang`, `jenis`, `harga`, `lokasi`) VALUES (:nambarang:, :jenis:, :harga:, :lokasi:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BarangController.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 04:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 04:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 06:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 06:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 06:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 06:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 06:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 06:22:08 --> Undefined variable $data_buku
+in APPPATH\Views\pgnbarang\tampildata.php on line 74.
+ 1 APPPATH\Views\pgnbarang\tampildata.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_buku', 'D:\\Final Project WP2\\pet_care\\app\\Views\\pgnbarang\\tampildata.php', 74)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Final Project WP2\\pet_care\\app\\Views\\pgnbarang\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pgnbarang/tampildata', [], true)
+ 5 APPPATH\Controllers\PgnbarangController.php(19): view('pgnbarang/tampildata', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 06:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 06:29:11 --> Undefined array key "jenisbarang"
+in APPPATH\Views\pgnbarang\tampildata.php on line 71.
+ 1 APPPATH\Views\pgnbarang\tampildata.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenisbarang"', 'D:\\Final Project WP2\\pet_care\\app\\Views\\pgnbarang\\tampildata.php', 71)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Final Project WP2\\pet_care\\app\\Views\\pgnbarang\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pgnbarang/tampildata', [], true)
+ 5 APPPATH\Controllers\PgnbarangController.php(19): view('pgnbarang/tampildata', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PgnbarangController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PgnbarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 07:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 13:33:21 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 73)
+ 2 APPPATH\Controllers\BarangController.php(73): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:33:21 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/5.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 73)
+ 2 APPPATH\Controllers\BarangController.php(73): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('5')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:33:22 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 73)
+ 2 APPPATH\Controllers\BarangController.php(73): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:33:22 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/5.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 73)
+ 2 APPPATH\Controllers\BarangController.php(73): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('5')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:34:51 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 73)
+ 2 APPPATH\Controllers\BarangController.php(73): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:34:51 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/5.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 73)
+ 2 APPPATH\Controllers\BarangController.php(73): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('5')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:39:14 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:39:14 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/5.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('5')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:40:18 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:40:18 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/5.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('5')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:46:37 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:46:37 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/5.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/5.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('5')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+CRITICAL - 2023-12-18 13:46:41 --> file_get_contents(D:\Final Project WP2\pet_care\writable\/uploads/4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\BarangController.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png): Failed to open stream: No such file or directory', 'D:\\Final Project WP2\\pet_care\\app\\Controllers\\BarangController.php', 74)
+ 2 APPPATH\Controllers\BarangController.php(74): file_get_contents('D:\\Final Project WP2\\pet_care\\writable\\/uploads/4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BarangController->foto('4')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Final Project WP2\\pet_care\\public\\index.php')
+INFO - 2023-12-18 13:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

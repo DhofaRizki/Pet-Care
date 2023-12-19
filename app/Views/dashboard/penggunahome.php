@@ -5,27 +5,27 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyResume Bootstrap Template - Index</title>
+  <title>Pet Care</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="public/img/favicon.png" rel="icon">
-  <link href="public/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="public/vendor/aos/aos.css" rel="stylesheet">
-  <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="public/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="public/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="public/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="public/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="public/css/style.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyResume
@@ -157,7 +157,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 512 512"><path d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5v1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3v-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z"/></svg>
             <i class="fa-paw"></i>
           </div>
-          <h4><a href="petstuff.php">Pet Stuff</a></h4>
+          <h4><a href="/pgnbarang/tampildata">Pet Stuff</a></h4>
           <p>Find your Pet Stuff for your lovely Pet just order it at Home</p>
         </div>
       </div>
@@ -168,7 +168,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 512 512"><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
             <i class="fa-bath"></i>
           </div>
-          <h4><a href="grooming.php">Grooming</a></h4>
+          <h4><a href="/pgngrooming/tampildata">Grooming</a></h4>
           <p>Find the nearest Pet Shop that can do Groomng for your lovely Pet</p>
         </div>
       </div>
@@ -179,7 +179,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 576 512"><path d="M48 0C21.5 0 0 21.5 0 48V256H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v64H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v80c0 26.5 21.5 48 48 48H265.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM152 64h16c8.8 0 16 7.2 16 16v24h24c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H184v24c0 8.8-7.2 16-16 16H152c-8.8 0-16-7.2-16-16V152H112c-8.8 0-16-7.2-16-16V120c0-8.8 7.2-16 16-16h24V80c0-8.8 7.2-16 16-16zM512 272a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM288 477.1c0 19.3 15.6 34.9 34.9 34.9H541.1c19.3 0 34.9-15.6 34.9-34.9c0-51.4-41.7-93.1-93.1-93.1H381.1c-51.4 0-93.1 41.7-93.1 93.1z"/></svg>
             <i class="fa-hospital-user"></i>
           </div>
-          <h4><a href="doctor.php">Doctor</a></h4>
+          <h4><a href="/pgndokter/tampildata">Doctor</a></h4>
           <p>Yout Pet got sick? Find the nearest Pet Shop that have Doctor for it</p>
         </div>
       </div>
@@ -205,7 +205,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="public/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Dhofa Rizki Alfarid</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <p>
@@ -218,7 +218,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="public/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Siti Zaskia Febriadisty</h3>
                 <h4>Designer</h4>
                 <p>
@@ -231,7 +231,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="public/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Rian Vernendy</h3>
                 <h4>Publisher</h4>
                 <p>
@@ -244,7 +244,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="public/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Antik Avelia Carolin</h3>
                 <h4>Marketing</h4>
                 <p>
@@ -297,18 +297,18 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="public/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="public/vendor/aos/aos.js"></script>
-  <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="public/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="public/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="public/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="public/vendor/typed.js/typed.umd.js"></script>
-  <script src="public/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="public/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/typed.js/typed.umd.js"></script>
+  <script src="/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="public/js/main.js"></script>
+  <script src="/js/main.js"></script>
 
 </body>
 

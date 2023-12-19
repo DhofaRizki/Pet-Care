@@ -78,6 +78,14 @@ defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8);       // database 
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9);      // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125);    // highest automatically-assigned error code
 
+
+defined('CSS')      || define('CSS', 'public/css/');
+
+defined('JS')      || define('JS', 'public/js/');
+
+defined('VENDOR')      || define('vendor', 'public/vendor/');
+
+defined('IMG')      || define('IMG', 'public/img/');
 /**
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_LOW instead.
  */

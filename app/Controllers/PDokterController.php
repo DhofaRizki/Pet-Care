@@ -30,8 +30,9 @@ class PDokterController extends BaseController
             $r = $model->update($id, $data);
          }else{
              $r = $model->insert($data);
-        }
+        }      $id=$r;
         if($r != false){
+            $this->terimaFile($id);
           return redirect()->to(base_url('pdokter'));
         }
      }
@@ -61,5 +62,20 @@ class PDokterController extends BaseController
          return view('pdokter/form', [
              'data' => $data
          ]);
+    }
+
+    private function terimaFile($id){
+        $f = request()->getFile('foto');
+        if($f->isFile()){
+            $target = WRITEPATH . '/uploads/';
+            $f->move($target, $id . '.png');
         }
+    }
+
+    public function foto($id){
+        $f = file_get_contents(WRITEPATH . '/uploads/' . $id . '.png');
+        return response()
+                ->setHeader('Content-type', 'image/png')
+                ->setBody( $f );
+    }
 }
