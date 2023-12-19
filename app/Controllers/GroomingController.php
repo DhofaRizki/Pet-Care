@@ -64,7 +64,7 @@ class GroomingController extends BaseController
 
     private function terimaFile($id){
         $f = request()->getFile('foto');
-        if($f && $f->isFile()){
+        if($f->isFile()){
             $target = WRITEPATH . '/uploads/';
             $f->move($target, $id . '.png');
         }

@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class LoginFilter implements FilterInterface
+class AdminFilter implements FilterInterface
 {
     /**
      * Do whatever processing this filter needs to do.
@@ -25,8 +25,7 @@ class LoginFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        
-        $p = session()->get('pengguna');
+        $p = session()->get('admin');
         if($p == null){
             return redirect()->to(base_url('login'));
         }

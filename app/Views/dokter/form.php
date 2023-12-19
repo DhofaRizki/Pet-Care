@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/paw-solid.svg" rel="icon">
   <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -40,7 +40,7 @@
 <body style="background-image: url('/img/bg.jpg');">
   
  
-  <form method="post" action="<?=base_url('/dokter/Save')?>">
+  <form enctype="multipart/form-data" method="post" action="<?=base_url('/dokter/Save')?>">
     <div class="container mt-5">
       <div class="row justify-content-center">
           <div class="col-md-6">
